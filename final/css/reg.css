@@ -1,0 +1,157 @@
+nav.navbar {
+   margin-bottom: 0;
+   border-radius: 0;
+}    
+    
+a.navbar-brand {
+   padding: 0px;
+}
+	
+a.navbar-brand>img {
+   height: 100%;
+   padding: 15px;
+   width: auto;
+}
+    
+.container{	   
+   margin: 20px auto;	   
+   box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 20px;	   
+   background-color: rgba(255,255,255,0.5);
+}
+	
+div#main{ 
+   background: url('/Data/img/logo.gif')center center fixed no-repeat;
+   width:100%;
+   background-size:contain;
+}
+	
+form.form-horizontal .control-label{
+   text-align: left;
+}	
+	
+input.form-control,select.form-control,textarea.form-control,div.panel{
+   background-color:rgba(255,255,255,0.7);
+}
+	
+textarea{
+   resize:none;
+}
+	
+/* Set black background color, white text and some padding */
+footer {
+   background-color: #555;
+   color: white;
+   padding: 15px;
+}
+    
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+   .row.content {height:auto;} 
+}
+	
+#datepicker > span:hover{
+   cursor: pointer;
+}
+	
+div#slct,div#pslct{
+   padding-left:0px;
+}
+	
+span.input-group-addon{
+   background-color:transparent;
+}
+	
+span#rel,span#ped,span#prd,span#wkl,span#abt{
+   border-radius:50%;
+}
+	
+div#lini{
+   border:1px solid black;
+   border-radius:50%;
+   margin:10px auto;
+   background:url('/Data/img/wed_logo.png') center no-repeat;
+   width:100px;
+   height:100px;
+   background-size:contain;
+}
+
+div#eor{
+   border:1px solid black;
+   border-radius:50%;
+   width:30px;
+   height:30px;
+   padding:3px;
+}
+
+div.fpg{		
+   min-height:100vh;	
+}
+	
+div#fcon{
+   margin-top:5%;	
+   padding-bottom:5%;
+}
+	
+li.decor,span.decor{
+   color:white;
+   padding:13px;
+   font-size:80%;
+   font-family:verdana;
+}
+	
+div.tpa{
+   margin-top:7px;
+}
+	
+div#profpic{
+   margin:10px auto;	
+   background:url('/Data/img/profpic.png') center no-repeat;
+   width:100px;
+   height:100px;
+   background-size:contain;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+   background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+   display: none;
+}
+
+button {
+   color: #ffffff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 17px;
+   font-family: Raleway;
+   cursor: pointer;
+}
+
+button:hover {
+   opacity: 0.8;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbbbbb;
+   border: none;  
+   border-radius: 50%;
+   display: inline-block;
+   opacity: 0.5;
+}
+
+.step.active {
+   opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+   background-color: #4CAF50;
+}

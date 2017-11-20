@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Telugu Matrimony</title>
+<meta charset="utf-8" >
+<meta name="description" content="best telugu matrimony site">
+<meta name="keywords" content="marriage,telugu,matrimony,weddings">
+<meta name="author" content="T,S">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="refresh" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="img/wed_logo.png" type="image/png" >
+<link rel="stylesheet" href="css/reg.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" type="text/css" />
+</head>
+<body>
+   <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>                        
+           </button>
+           <a class="navbar-brand" href="#"><img class="img-responsive" src="img/wed_logo.png" alt="matrimony_logo" width="147" height="125"></a>
+         </div>
+         <div class="collapse navbar-collapse" id="myNavbar">      
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   <div class="container-fluid" id="main"> 
+      <div class="container col-sm-offset-3 col-sm-6">    
+         <form class="form-horizontal" id="regForm" action="welcome.html">
+	        <h4 class="text-center">Register Below</h4>
+            <!-- Circles which indicates the steps of the form: -->
+	        <div style="text-align:center;margin-top:40px;">
+	           <span class="step"></span>
+	           <span class="step"></span>
+	           <span class="step"></span>
+	           <span class="step"></span>
+	           <span class="step"></span>
+	           <span class="step"></span>
+	        </div>			
+	        <hr>
+	        <div class="tab">
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="prof">Profile for:</label>
+	              <div class="col-sm-9">
+                     <select name="profile_for" class="form-control" id="prof"></select>
+	              </div>
+	           </div>	
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="fname">Name:</label>
+                  <div class="col-sm-9">
+	                 <div class="input-group">
+                        <input type="text" class="form-control" id="fname" placeholder="Enter Name" name="fname" autocomplete="off">
+		                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		             </div>
+                  </div>
+	           </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="gender">Gender:</label>
+	              <div class="col-sm-9">
+                     <label class="radio-inline">
+                        <input type="radio" name="gender" id="gender1" value="male">Male
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="gender" id="gender2" value="female">Female
+                     </label>
+	              </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="bdate">Date of Birth:</label>
+	              <div class="col-sm-9">
+                     <div id="datepicker" class="input-group date" data-date-format="dd-mm-yyyy">
+                        <input type="text" class="form-control"  id="bdate"  name="date"/>
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                     </div>
+		          </div>
+	           </div>		
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="religion">Religion:</label>
+	              <div class="col-sm-9">
+                     <select name="religion" class="form-control" id="religion"></select>
+	              </div>
+	           </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="mtounge">Mother Tongue:</label>
+	              <div class="col-sm-9">
+                     <select name="mother_tounge" class="form-control" id="mtounge"></select>
+	              </div>
+	           </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="mob">Mobile Number:</label>
+                  <div class="col-sm-9">	  
+			         <div class="col-sm-4  tpa" id="slct">
+				        <select class="form-control" name="M_COUNTRYCODE" id="M_COUNTRYCODE"></select>
+			         </div>
+			         <div class="col-sm-8 input-group tpa">
+				        <input type="number" name="MOBILENO" id="MOBILENO" min="0" class="form-control" maxlength="20" placeholder="Mobile Number" autocomplete="off">
+				        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+			         </div>
+                  </div>	           			
+	           </div>
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="email">Email:</label>
+                  <div class="col-sm-9">
+	                 <div class="input-group">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" autocomplete="off">
+		                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+	                 </div>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="pwd">Password:</label>
+                  <div class="col-sm-9"> 
+                     <div class="input-group">	  
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+		                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                     </div>
+                  </div>
+               </div>
+               <div class="form-group">        
+                  <div class="col-sm-offset-3 col-sm-9">
+                     <div class="checkbox">
+                        <label>
+					       <input type="checkbox" name="tc" id="tc1"> I have read and agree to the <a href="Terms&conditions.html">T&C</a> and <a href="Privacypolicy.html">Privacy Policy</a>
+				        </label>
+                     </div>
+                  </div>
+               </div>	        
+	        </div>
+	        <div class="tab">
+	           <div class="input-group">
+	              <span class="input-group-addon" id="rel"><i class="glyphicon glyphicon-list-alt"></i></span>
+	              <h4>&nbsp;Religion details:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="mcaste">Caste:</label>
+	              <div class="col-sm-9">
+                     <select name="caste" class="form-control" id="mcaste"></select>
+	              </div>
+	           </div>
+               <div class="form-group">	
+	              <div class="col-sm-offset-3 col-sm-9 checkbox">
+                  <label><input type="checkbox" name="intc" id="intc">  Willing to marry from other communities also</label>
+                  </div>
+               </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="scaste">Sub Caste:</label>
+                  <div class="col-sm-9">
+                     <input type="text" class="form-control" id="scaste" placeholder="Enter Sub Caste" name="sub_caste" autocomplete="off">		   
+                  </div>
+	           </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="gothra">Gothra(m):</label>
+                  <div class="col-sm-9">
+                     <input type="text" class="form-control" id="gothra" placeholder="Enter Gothram" name="gothram" autocomplete="off">
+                  </div>
+	           </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="dosham">Dosham:</label>
+	              <div class="col-sm-9">
+                     <label class="radio-inline">
+                        <input type="radio" name="dosham" id="option1" value="yes" onclick="myDosham()">Yes
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="dosham" id="option2" value="no" onclick="myDosham()">No
+                     </label>
+		             <label class="radio-inline">
+                        <input type="radio" name="dosham" id="option3" value="other" onclick="myDosham()">Don't Know
+                     </label>
+	              </div>
+	              <div class="row col-sm-offset-3" id="dosham" style="display:none;">
+			         <div class="col-sm-4" style="margin-bottom: 7px">
+				        <input name="MANGLIK_M" id="MANGLIK_M4" value="4" type="checkbox" onclick="select_dosham();" style="margin-right: 5px"><label for="MANGLIK_M4" class="checkbox_padd hdtxt checkbox-small-txt">Manglik</label>
+			         </div>									
+			         <div class="col-sm-4" style="margin-bottom: 7px">
+				        <input name="MANGLIK_M" id="MANGLIK_M5" value="5" type="checkbox" onclick="select_dosham();" style="margin-right: 5px"><label for="MANGLIK_M5" class="checkbox_padd hdtxt checkbox-small-txt">Sarpa dosh</label>
+			         </div>									
+			         <div class="col-sm-4" style="margin-bottom: 7px">
+				        <input name="MANGLIK_M" id="MANGLIK_M10" value="10" type="checkbox" onclick="select_dosham();" style="margin-right: 5px"><label for="MANGLIK_M10" class="checkbox_padd hdtxt checkbox-small-txt">Kala sarpa dosh</label>
+			         </div>									
+			         <div class="col-sm-4" style="margin-bottom: 7px">
+				        <input name="MANGLIK_M" id="MANGLIK_M20" value="20" type="checkbox" onclick="select_dosham();" style="margin-right: 5px"><label for="MANGLIK_M20" class="checkbox_padd hdtxt checkbox-small-txt">Rahu dosh</label>
+			         </div>									
+			         <div class="col-sm-4" style="margin-bottom: 7px">
+				        <input name="MANGLIK_M" id="MANGLIK_M40" value="40" type="checkbox" onclick="select_dosham();" style="margin-right: 5px"><label for="MANGLIK_M40" class="checkbox_padd hdtxt checkbox-small-txt">Kethu dosh</label>
+			         </div>									
+			         <div class="col-sm-4" style="margin-bottom: 7px">
+				        <input name="MANGLIK_M" id="MANGLIK_M80" value="80" type="checkbox" onclick="select_dosham();" style="margin-right: 5px"><label for="MANGLIK_M80" class="checkbox_padd hdtxt checkbox-small-txt">Kalathra dosh</label>
+			         </div>
+	              </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="ped"><i class="glyphicon glyphicon-list"></i></span>
+	              <h4>&nbsp;Personal Details:</h4> 
+	           </div>
+	           <hr>	
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="ms">Marital Status:</label>
+	              <div class="col-sm-9">
+                     <label class="radio-inline">
+                        <input type="radio" name="marital_status" id="ms1" value="never_married" onclick="myMarital()">Never Married
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="marital_status" id="ms2" value="widowed" onclick="myMarital()">Widowed
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="marital_status" id="ms3" value="divorced" onclick="myMarital()">Divorced
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="marital_status" id="ms4" value="awaiting_divorce" onclick="myMarital()">Awaiting Divorce
+                     </label>
+	              </div>
+	           </div>
+	           <div class="form-group" id="nchildren" style="display:none;">
+                  <label class="control-label col-sm-3" for="ms">Number of Children:</label>
+	              <div class="col-sm-9">
+                     <label class="radio-inline">
+                        <input type="radio" name="number_of_children" id="ms1" value="none" onclick="myMarital()">None
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="number_of_children" id="ms2" value="1" onclick="myMarital()">1
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="number_of_children" id="ms3" value="2" onclick="myMarital()">2
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="number_of_children" id="ms4" value="3_above">3 & Above
+                     </label>
+	              </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="inputFeet">Height:</label>      
+	              <div class="col-sm-5">
+		             <div class="input-group tpa">
+                        <input type="number" class="form-control" id="inputFeet" placeholder="Feet" step="0.1" min="4" max="8" name="feet" autocomplete="off" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)" value="">
+                        <span class="input-group-addon">ft</span>
+		             </div>		   
+		          </div>
+		          <div class="col-sm-4">
+		             <div  class="input-group tpa">
+                        <input type="number" class="form-control" id="inputcm" placeholder="Cm" step="1"  min="121" max="244" name="centimeter" autocomplete="off" oninput="cmConverter(this.value)" onchange="cmConverter(this.value)" value="">
+                        <span class="input-group-addon">cm</span>
+		             </div>		   
+		          </div>
+		       </div>
+		       <div class="form-group">
+                  <label class="control-label col-sm-3" for="fs">Family Status:</label>
+	              <div class="col-sm-9">
+                     <label class="radio-inline">
+                        <input type="radio" name="family_status" id="fs1" value="middle_class">Middle Class
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="family_status" id="fs2" value="upper_middle_class">Upper Middle Class
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="family_status" id="fs3" value="rich">Rich
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="family_status" id="fs4" value="affluent">Affluent
+                     </label>
+                  </div>
+               </div>	
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="fty">Family Type:</label>
+	              <div class="col-sm-9">
+                     <label class="radio-inline">
+                        <input type="radio" name="family_type" id="fty1" value="joint">Joint
+                     </label>
+                     <label class="radio-inline">
+                        <input type="radio" name="family_type" id="fty2" value="nuclear">Nuclear
+                     </label>
+                  </div>
+               </div>	
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="fvs">Family Values:</label>
+	                 <div class="col-sm-9">
+                        <label class="radio-inline">
+                           <input type="radio" name="family_values" id="fvs1" value="orthodox">Orthodox
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="family_values" id="fvs2" value="traditional">Traditional
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="family_values" id="fvs3" value="moderate">Moderate
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="family_values" id="fvs4" value="liberal">Liberal
+                        </label>
+                     </div>
+	           </div>	
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="ads">Any Disability:</label>
+	                 <div class="col-sm-9">
+                        <label class="radio-inline">
+                           <input type="radio" name="any_disability" id="ads1" value="1">Normal
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="any_disability" id="ads2" value="2">Physically Challenged
+                        </label>
+                     </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="prd"><i class="glyphicon glyphicon-education"></i></span>
+	              <h4>&nbsp;Professional Details:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="hed">Highest Education:</label>
+	                 <div class="col-sm-9">
+	                    <select name="highest_education" class="form-control" id="hed"></select>
+	                 </div>
+	           </div>	
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="wk">Employed_in:</label>
+	                 <div class="col-sm-9">
+	                    <label class="radio-inline">
+                           <input type="radio" name="employed_in" id="wk" value="government" onclick="myWork()">Government
+	                    </label>
+	                    <label class="radio-inline">
+                           <input type="radio" name="employed_in" id="wk2" value="private" onclick="myWork()">Private
+	                    </label>
+	                    <label class="radio-inline">
+                           <input type="radio" name="employed_in" id="wk3" value="business" onclick="myWork()">Business
+	                    </label>
+	                    <label class="radio-inline">
+                           <input type="radio" name="employed_in" id="wk4" value="defence" onclick="myWork()">Defence
+	                    </label>
+	                    <label class="radio-inline">
+                           <input type="radio" name="employed_in" id="wk5" value="self_employed" onclick="myWork()">Self Employed
+	                    </label>
+	                    <label class="radio-inline">
+                           <input type="radio" name="employed_in" id="wk6" value="not_working" onclick="myWork()">Not Working
+	                    </label>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="occupation">Occupation:</label>
+	                 <div class="col-sm-9">
+                        <select name="occupation" class="form-control" id="occupation"></select>
+	                 </div>
+	           </div>	
+	           <div class="form-group" id="inc" style="display:none;">
+	              <label class="control-label col-sm-3" for="curr">Income:</label>
+	                 <div class="col-sm-3 tpa">
+	                    <select name="income" class="form-control" id="curr"></select>
+	                 </div>
+	                 <div class="col-sm-3 tpa">
+	                    <input type="number" class="form-control" id="money" min="0" placeholder="Enter Income" name="money" autocomplete="off">		   
+	                 </div>
+	                 <div class="col-sm-3">
+	                    <label class="radio-inline">
+	                       <input type="radio" name="days" id="pmonth" value="per_month">Per Month
+	                    </label>
+	                    <label class="radio-inline">
+	                       <input type="radio" name="days" id="pyear" value="per_year">Per Year
+	                    </label>
+	                 </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="wkl"><i class="glyphicon glyphicon-briefcase"></i></span>
+	              <h4>&nbsp;Work Location:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="country">Country:</label>
+	                 <div class="col-sm-9">
+	                    <select class="form-control" id="country"></select>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="state">State:</label>
+	                 <div class="col-sm-9">
+	                    <select class="form-control" id="state"></select>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="district">City:</label>
+	                 <div class="col-sm-9">
+	                    <select class="form-control" id="district"></select>
+	                 </div>
+	           </div>	
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="abt"><i class="glyphicon glyphicon-pencil"></i></span>
+	              <h4>&nbsp;About Me:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <div class="col-sm-offset-3 col-sm-9">
+	                 <label for="comment">Prospective matches would love to know what you are like, as a person. Write about yourself:</label>
+	                 <textarea class="form-control" rows="5" id="comment" placeholder="Type atleast 50 words"></textarea>
+	                 <span class="col-sm-offset-8 col-sm-4" id="noch"></span>
+	              </div>	
+	           </div>	
+	        </div>
+	        <div class="tab">
+	           <div class="input-group">
+	              <span class="input-group-addon" id="rel"><i class="glyphicon glyphicon-dashboard"></i></span>
+	              <h4>&nbsp;Basic Information:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="body_type">Body Type:</label>
+	                 <div class="col-sm-9">
+	                    <label class="radio-inline">
+                           <input type="radio" name="body_type" id="slim" value="slim" onclick="myBody()">Slim
+	                    </label>
+	                    <label class="radio-inline">
+                           <input type="radio" name="body_type" id="avg" value="average" onclick="myBody()">Average
+	                    </label>
+	                    <label class="radio-inline">
+                           <input type="radio" name="body_type" id="athl" value="athletic" onclick="myBody()">Athletic
+	                    </label>
+	                    <label class="radio-inline">
+                           <input type="radio" name="body_type" id="hvy" value="heavy" onclick="myBody()">Heavy
+	                    </label>
+	                 </div>
+	           </div>  
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="myweight">Weight:</label>
+	                 <div class="col-sm-9">
+	                    <div class="input-group">
+                           <select name="weight" class="form-control" id="myweight"></select>
+	                       <span class="input-group-addon"><i class="glyphicon glyphicon-scale"></i></span>
+	                    </div>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="edud">Education In Detail:</label>
+	                 <div class="col-sm-9">
+	                    <div class="input-group">
+                           <input type="text" class="form-control" id="edud" placeholder="Enter Your Education Details" name="education_in_detail" autocomplete="off">
+                           <span class="input-group-addon"><i class="glyphicon glyphicon-education"></i></span>
+	                    </div>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="occ">Occupation In Detail:</label>
+                     <div class="col-sm-9">
+	                    <div class="input-group">
+                           <input type="text" class="form-control" id="occ" placeholder="Enter Your Occupation Details" name="occupation_in_detail" autocomplete="off">
+		                   <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+	                    </div>
+                     </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="ped"><i class="glyphicon glyphicon-glass"></i></span>
+	              <h4>&nbsp;Lifestyle Info:</h4> 
+	           </div>
+	           <hr>	
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="eah">Eating Habit:</label>
+	                 <div class="col-sm-9">
+                        <label class="radio-inline">
+                           <input type="radio" name="eating_habit" id="eah1" value="vegetarian">Vegetarian
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="eating_habit" id="eah2" value="non-vegetarian">Non-Vegetarian
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="eating_habit" id="eah3" value="eggetarian">Eggetarian
+                        </label>		 
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="drh">Drinking Habit:</label>
+	                 <div class="col-sm-9">
+                        <label class="radio-inline">
+                           <input type="radio" name="drinking_habit" id="drh1" value="no">No
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="drinking_habit" id="drh2" value="drinks socially">Drinks Socially
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="drinking_habit" id="drh3" value="yes">Yes
+                        </label>
+                     </div>
+	           </div>	
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="skh">Smoking Habit:</label>
+	                 <div class="col-sm-9">
+                        <label class="radio-inline">
+                           <input type="radio" name="smoking_habit" id="skh1" value="no">No
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="smoking_habit" id="skh2" value="occasionally">Occasionally
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="smoking_habit" id="skh3" value="yes">Yes
+                        </label>
+	                 </div>
+	           </div>	
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="prd"><i class="glyphicon glyphicon-star"></i></span>
+	              <h4>&nbsp;Horoscope Details:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="mystar">Star:</label>
+	                 <div class="col-sm-9">
+                        <select name="star" class="form-control" id="mystar"></select>
+	                 </div>
+	           </div>
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="myraasi">Raasi:</label>
+	                 <div class="col-sm-9">
+                        <select name="raasi" class="form-control" id="myraasi"></select>
+	                 </div>
+               </div>
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="tbhour">Time Of Birth:</label>
+                     <div class="col-sm-3 tpa">
+                        <select name="hours" class="form-control" id="tbhour"></select>
+                     </div>
+                     <div class="col-sm-3 tpa">
+                        <select name="minutes" class="form-control" id="tbminute"></select>
+                     </div>
+                     <div class="col-sm-3  tpa">
+                        <select name="meridiem" class="form-control" id="meridiem">
+                           <option value="0">AM/PM</option>
+                           <option value="1">AM</option>
+                           <option value="2">PM</option>
+                        </select>
+                     </div>
+               </div>	
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="bcountry">Place Of Birth:</label>
+                     <div class="col-sm-9 tpa">
+                        <select name="country_birth" class="form-control" id="bcountry"></select>
+                     </div>
+	                 <div class="col-sm-offset-3 col-sm-9 tpa">
+                        <select name="state_birth" class="form-control" id="bstate"></select>
+	                 </div>     
+	                 <div class="col-sm-offset-3 col-sm-9 tpa">
+	                    <select name="city_birth" class="form-control" id="bdistrict"></select>
+	                 </div>
+               </div>	
+               <hr>
+               <div class="input-group">
+                  <span class="input-group-addon" id="wkl"><i class="glyphicon glyphicon-home"></i></span>
+                  <h4>&nbsp;Family Information:</h4> 
+               </div>
+               <hr>
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="fstatus">Father Status:</label>
+                     <div class="col-sm-9">
+                        <select name="father_status" class="form-control" id="fstatus">
+                           <option value="0">Select Father Status</option>
+                           <option value="1">Employed</option>
+                           <option value="2">Business Man</option>
+                           <option value="3">Not Employed</option>
+                           <option value="4">Professional</option>
+                           <option value="5">Retired</option>
+                           <option value="6">Passed Away</option>
+                        </select>
+                     </div>
+               </div>
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="mstatus">Mother Status:</label>
+                     <div class="col-sm-9">
+                        <select name="mother_status" class="form-control" id="mstatus">
+                           <option value="0">Select Mother Status</option>
+                           <option value="1">Employed</option>
+                           <option value="2">Business Woman</option>
+                           <option value="3">Professional</option>
+                           <option value="4">Retired</option>
+                           <option value="5">Housewife</option>
+                           <option value="6">Passed Away</option>
+                        </select>
+                     </div>
+               </div>
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="brthr">Brothers:</label>
+                     <div class="col-sm-5 tpa">
+                        <select name="brothers" class="form-control" id="brthr">
+                           <option value="0">Number Of Brothers</option>
+                           <option value="1">None</option>
+                           <option value="2">1</option>
+                           <option value="3">2</option>
+                           <option value="4">3</option>
+                           <option value="5">4</option>
+                           <option value="6">5</option>
+                           <option value="7">5 &amp; above</option>
+                        </select>
+                     </div>
+	                 <div class="col-sm-4 tpa">
+                        <select name="brothers_married" class="form-control" id="brthr2">
+                           <option value="0">Brothers Married</option>
+                           <option value="1">None</option>
+                           <option value="2">1</option>
+                           <option value="3">2</option>
+                           <option value="4">3</option>
+                           <option value="5">4</option>
+                           <option value="6">5</option>
+                           <option value="7">5 &amp; above</option>
+                        </select>
+	                 </div>
+               </div>
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="sistr">Sisters:</label>
+                     <div class="col-sm-5 tpa">
+                        <select name="sisters" class="form-control" id="sistr">
+                           <option value="0">Number Of Sisters</option>
+                           <option value="1">None</option>
+                           <option value="2">1</option>
+                           <option value="3">2</option>
+                           <option value="4">3</option>
+                           <option value="5">4</option>
+                           <option value="6">5</option>
+                           <option value="7">5 &amp; above</option>
+                        </select>
+                     </div>
+                     <div class="col-sm-4 tpa">
+                        <select name="sisters_married" class="form-control" id="sistr2">
+                           <option value="0">Sisters Married</option>
+                           <option value="1">None</option>
+                           <option value="2">1</option>
+                           <option value="3">2</option>
+                           <option value="4">3</option>
+                           <option value="5">4</option>
+                           <option value="6">5</option>
+                           <option value="7">5 &amp; above</option>
+                        </select>
+                     </div>
+               </div>		
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="floc">Family Location:</label>
+                     <div class="col-sm-9">
+                        <label class="radio-inline">
+                           <input type="radio" name="family_location" id="floc1" value="same_location" onclick="myLoc()">Same as my Location
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="family_location" id="floc2" value="different_location" onclick="myLoc()">Different Location
+                        </label>
+                     </div>
+               </div>
+               <div class="form-group" id="parloc" style="display:none;">
+                  <div class="col-sm-offset-3 col-sm-9 tpa">
+                     <select name="country_parents" class="form-control" id="pcountry"></select>
+                  </div>
+                  <div class="col-sm-offset-3 col-sm-9 tpa">
+                     <select name="state_parents" class="form-control" id="pstate"></select>
+                  </div>     
+                  <div class="col-sm-offset-3 col-sm-9 tpa">
+                     <select name="city_parents" class="form-control" id="pdistrict"></select>
+                  </div>
+               </div>	
+               <div class="form-group">
+                  <label class="control-label col-sm-3" for="mob">Parents Contact No:</label>
+                     <div class="col-sm-9">	  
+			            <div class="col-sm-4 tpa" id="pslct">
+				           <select class="form-control" name="PM_COUNTRYCODE" id="PM_COUNTRYCODE" ></select>
+			            </div>
+			            <div class="col-sm-8 input-group tpa">
+				           <input type="number" name="PMOBILENO" id="PMOBILENO" min="0" class="form-control" maxlength="20" placeholder="Phone Number" autocomplete="off">
+				           <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+			            </div>
+                     </div>	           			
+               </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="anso">Ancestral Origin:</label>
+                     <div class="col-sm-9">
+	                    <div class="input-group">
+                           <input type="text" class="form-control" id="anso" placeholder="Enter Your Ancestral / Family Origin" name="Ancestral_Origin" autocomplete="off">
+		                   <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+	                    </div>
+                     </div>
+	           </div>
+	        </div>
+	        <div class="tab">
+	           <div class="input-group">
+	              <span class="input-group-addon" id="rel"><i class="glyphicon glyphicon-heart"></i></span>
+	              <h4>&nbsp;Hobbies &amp; Interests:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">        
+	              <div class="col-sm-offset-1 col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="painting"> Painting</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="photography"> Photography</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="dancing"> Dancing</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="nature"> Nature</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-3">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="gardening"> Gardening</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-offset-1 col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="cooking"> Cooking</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="puzzles"> Puzzles</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="art_handicraft"> Art/Handicraft</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="pets"> Pets</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-3">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="movies"> Movies</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-offset-1 col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="internet_surfing"> Internet-surfing</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="traveling"> Traveling</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="listening_music"> Listening Music</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-5">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="playing_musical_instruments"> Playing Musical Instruments</label>
+	                 </div>
+	              </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-offset-1 col-sm-2" for="othr">Others:</label>
+	                 <div class="col-sm-9">
+	                    <input type="text" class="form-control" id="othr" placeholder="Enter Your Other Interests" name="other_hobbies" autocomplete="off">
+	                 </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="ped"><i class="glyphicon glyphicon-music"></i></span>
+	              <h4>&nbsp;Favourite Music:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">        
+	              <div class="col-sm-offset-1 col-sm-3">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="classical_music"> Classical Music</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-3">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="western_music"> Western Music</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-5">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="film_songs"> Film Songs</label>
+	                 </div>
+	              </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-offset-1 col-sm-2" for="othrm">Others:</label>
+	                 <div class="col-sm-9">
+	                    <input type="text" class="form-control" id="othrm" placeholder="Enter Your Other Music Interests" name="other_music_interest" autocomplete="off">
+	                 </div>
+	           </div>	
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="prd"><i class="glyphicon glyphicon-flash"></i></span>
+	              <h4>&nbsp;Sports &amp; Fitness:</h4> 
+	           </div>
+	           <hr>	
+	           <div class="form-group">        
+	              <div class="col-sm-offset-1 col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="cricket"> Cricket</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="football"> Football</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="tennis"> Tennis</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="swimming"> Swimming</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-3">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="gym"> Gym</label>
+	                 </div>
+	              </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-offset-1 col-sm-2" for="othrf">Others:</label>
+                     <div class="col-sm-9">
+                        <input type="text" class="form-control" id="othrf" placeholder="Enter Your Other Fitness Interests" name="other_fitness_interest" 
+		                 autocomplete="off">
+                     </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="wkl"><i class="glyphicon glyphicon-bullhorn"></i></span>
+	              <h4>&nbsp;Spoken Languages:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">        
+	              <div class="col-sm-offset-1 col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="english"> English</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="hindi"> Hindi</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="telugu"> Telugu</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="tamil"> Tamil</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-3">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="kannada"> Kannada</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-offset-1 col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="malayalam"> Malayalam</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="marathi"> Marathi</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="urdu"> Urdu</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-2">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="gujarati"> Gujarati</label>
+	                 </div>
+	              </div>
+	              <div class="col-sm-3">
+	                 <div class="checkbox">
+	                    <label><input type="checkbox" name="oriya"> Oriya</label>
+	                 </div>
+	              </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-offset-1 col-sm-2" for="othrl">Others:</label>
+	                 <div class="col-sm-9">
+	                    <input type="text" class="form-control" id="othrl" placeholder="Enter Your Other Languages" name="other_languages" autocomplete="off">
+	                 </div>
+	           </div>	           
+	        </div>
+	        <div class="tab">
+	           <div class="input-group">
+	              <span class="input-group-addon" id="rel"><i class="glyphicon glyphicon-user"></i></span>
+	              <h4>&nbsp;Partner preferences:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="miage">Age:</label>
+	                 <div class="col-sm-3 tpa">
+	                    <select name="min_age" class="form-control" id="miage"></select>	  
+	                 </div>
+	                 <div class="col-sm-1 text-center tpa"><span>to</span></div>
+	                    <div class="col-sm-3 tpa">
+	                       <select name="max_age" class="form-control" id="maage"></select>	  
+	                    </div>
+	                    <div class="col-sm-2 tpa">
+						   <span>Years</span>
+						</div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="HFeet">Height:</label>      
+	                 <div class="col-sm-4">
+	                    <div class="input-group hght">
+	                       <input type="number" class="form-control" id="HFeet" placeholder="Feet" step="0.1" min="4" max="8" name="feet" autocomplete="off" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)" value="">
+	                       <span class="input-group-addon">ft</span>
+	                    </div>		   
+	                 </div>
+	                 <div class="col-sm-1 text-center tpa">
+					    <span>to</span>
+			         </div>
+	                 <div class="col-sm-4">
+		                <div class="input-group hght">
+                           <input type="number" class="form-control" id="HFeet2" placeholder="Feet" step="0.1" min="4" max="8" name="feet" autocomplete="off" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)" value="">
+                           <span class="input-group-addon">ft</span>
+		                </div>		   
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="mas">Marital Status:</label>
+	                 <div class="col-sm-9 checkbox">
+	                    <label class="col-sm-4">
+	                       <input type="checkbox" name="marital_status" id="mas" value="all" onclick="marStatus()" onchange="marStat()">All
+	                    </label>
+	                    <label class="col-sm-4">
+	                       <input type="checkbox" name="marital_status" id="mas1" value="never_married" onclick="marStatus()">Never Married
+	                    </label>
+	                    <label class="col-sm-4">
+	                       <input type="checkbox" name="marital_status" id="mas2" value="widowed" onclick="marStatus()">Widowed
+	                    </label>
+	                    <label class="col-sm-4">
+	                       <input type="checkbox" name="marital_status" id="mas3" value="divorced" onclick="marStatus()">Divorced
+	                    </label>
+	                    <label class="col-sm-8">
+	                       <input type="checkbox" name="marital_status" id="mas4" value="awaiting_divorce" onclick="marStatus()">Awaiting Divorce
+	                    </label>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="phs">Physical Status:</label>
+	                 <div class="col-sm-9">
+                        <label class="radio-inline">
+                           <input type="radio" name="physical_status" id="phs1" value="normal">Normal
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="physical_status" id="phs2" value="physically_challenged">Physically Challenged
+                        </label>
+                        <label class="radio-inline">
+                           <input type="radio" name="physical_status" id="phs3" value="doesn't_matter">Doesn't Matter
+                        </label>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="ehs">Eating Habits:</label>
+	                 <div class="col-sm-9">
+	                    <label class="radio-inline">
+	                       <input type="radio" name="eating_habits" id="ehs" value="vegetarian">Vegetarian
+	                    </label>
+	                    <label class="radio-inline">
+	                       <input type="radio" name="eating_habits" id="ehs1" value="non-vegetarian">Non-vegetarian
+	                    </label>
+	                    <label class="radio-inline">
+	                       <input type="radio" name="eating_habits" id="ehs2" value="eggetarian">Eggetarian
+	                    </label>
+	                    <label class="radio-inline">
+	                       <input type="radio" name="eating_habits" id="ehs3" value="doesn't_matter">Doesn't Matter
+	                    </label>
+	                 </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="rel"><i class="glyphicon glyphicon-list-alt"></i></span>
+	              <h4>&nbsp;Religion preferences:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="preligion">Religion:</label>
+	                 <div class="col-sm-9">
+	                    <select name="partner_religion" class="form-control" id="preligion"></select>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="pmtounge">Mother Tongue:</label>
+	                 <div class="col-sm-9">
+	                    <select name="partner_mother_tounge" class="form-control" id="pmtounge"></select>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="pcaste">Caste:</label>
+	                 <div class="col-sm-9">
+	                    <select name="partner_caste" class="form-control" id="pcaste"></select>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+                  <label class="control-label col-sm-3" for="pscaste">Sub Caste:</label>
+                  <div class="col-sm-9">
+                    <input type="text" class="form-control" id="pscaste" placeholder="Enter Sub Caste" name="partner_sub_caste" autocomplete="off">		   
+                  </div>
+	           </div>	
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="parstar">Star:</label>
+	                 <div class="col-sm-9">
+	                    <select name="partner_star" class="form-control" id="parstar"></select>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="manglik">Manglik:</label>
+	                 <div class="col-sm-9">
+	                    <label class="radio-inline">
+	                       <input type="radio" name="manglik" id="manglik1" value="yes">Yes
+	                    </label>
+	                    <label class="radio-inline">
+	                       <input type="radio" name="manglik" id="manglik2" value="no">No
+	                    </label>
+	                    <label class="radio-inline">
+	                       <input type="radio" name="manglik" id="manglik3" value="other">Doesn't Matter
+	                    </label>
+	                 </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="rel"><i class="glyphicon glyphicon-map-marker"></i></span>
+	              <h4>&nbsp;Location preferences:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="parcountry">Country Living In:</label>
+	                 <div class="col-sm-9">
+	                    <select name="partners_country" class="form-control" id="parcountry"></select>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="cship">Citizenship:</label>
+	                 <div class="col-sm-9">
+                        <select name="partner_citizenship" class="form-control" id="cship"></select>
+	                 </div>
+	           </div>
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="wkl"><i class="glyphicon glyphicon-briefcase"></i></span>
+	              <h4>&nbsp;Profession Preferences:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="pared">Education:</label>
+	                 <div class="col-sm-9">
+                        <select name="partner_education" class="form-control" id="pared"></select>
+	                 </div>
+	           </div>
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="poccupation">Occupation:</label>
+	                 <div class="col-sm-9">
+                        <select name="partner_occupation" class="form-control" id="poccupation"></select>
+	                 </div>
+	           </div>	
+	           <div class="form-group">
+	              <label class="control-label col-sm-3" for="paincome">Anual Income:</label>
+	                 <div class="col-sm-6">
+	                    <input type="number" class="form-control" id="paincome" min="0" placeholder="Enter In Rupees" name="partner_anual_income" autocomplete="off">
+	                 </div>
+	                 <div class="tpa"><span>Enter In Rupees</span></div>
+	           </div>	
+	           <hr>
+	           <div class="input-group">
+	              <span class="input-group-addon" id="abt"><i class="glyphicon glyphicon-pencil"></i></span>
+	              <h4>&nbsp;Partner Description:</h4> 
+	           </div>
+	           <hr>
+	           <div class="form-group">
+	              <div class="col-sm-offset-3 col-sm-9">
+	                 <label for="pabout">Describe what you are looking for in a partner:</label>
+	                    <textarea class="form-control" rows="5" id="pabout" placeholder="Type atleast 50 words"></textarea>
+	                    <span class="col-sm-offset-8 col-sm-4" id="abtpartner"></span>
+	              </div>	
+	           </div>		           
+	        </div>
+	        <div class="tab">
+			   <div class="panel panel-default tpa col-sm-12" >
+	              <div class="panel-body text-center">Add atleast one photo to ensure your profile gets featured on top of the search results.</div>
+	           </div>
+			   <div class="col-sm-12">
+	              <div id="profpic"></div>
+	           </div>
+	           <div class="form-group col-sm-12">
+                  <label>Enter the User name: </label>
+                  <input class="form-control" type="text" id="filename" /> 
+	           </div>
+	           <div class="form-group col-sm-12">
+                  <label>Select your photo: </label>
+                  <input class="form-control" type="file" id="myfile"/>
+	           </div>
+	           <div class="form-group col-sm-12">
+                  <div class="progress">
+                     <div class="progress-bar progress-bar-success progress-bar-striped active myprogress" role="progressbar" style="width:0%">0%</div>
+                  </div>
+                     <div class="msg"></div>
+	           </div>     	           
+	           <div class="form-group">
+	              <div class="col-sm-3 tpa">
+                     <button type="submit" id="btn" class="btn btn-default" value="Upload"><span class="glyphicon glyphicon-upload">&nbsp;</span>Upload</button>
+                   </div>
+				   <div class="col-sm-9 tpa text-left">
+				      <span><strong>Click this button to Upload your Photo</strong></span>
+				   </div>
+	           </div>  
+	        </div>
+			<hr> 
+	        <div style="overflow:auto;">
+	           <div>
+	              <button type="button" id="prevBtn" class="btn btn-default col-sm-offset-3 col-sm-3" onclick="nextPrev(-1)">Previous</button>
+	              <button type="button" id="nextBtn" class="btn btn-success col-sm-offset-3 col-sm-3" onclick="nextPrev(1)">Next</button>
+	           </div>
+	        </div>           
+         </form>    
+      </div>
+      <div class="col-sm-2"></div>
+   </div>
+   <footer class="container-fluid text-center">
+      <p>Copyright &copy; 2017. All rights reserved.</p>
+   </footer> 
+   <script src="js/jquery-2.2.4.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="js/file.js"></script>
+   <script src="js/prof.js"></script>
+   <script src="js/index.js"></script>
+   <script src="js/custom.js"></script>
+   <script src="js/reg.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+</body>
+</html>
